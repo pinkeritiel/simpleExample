@@ -21,7 +21,7 @@ try {
        // eg:  argObject.getString(“my-param”)
  
        // Here goes our custom code
- 		alert("sampleAction");
+ 		alert('sampleAction');
        callbackContext.success();
        return true;
     }
