@@ -13,6 +13,7 @@ public class MyPlugin extends CordovaPlugin {
 @Override
 public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
 try {
+		alert(action);
     if (ACTION_DEMO.equals(action)) {
        JSONObject argObject = args.getJSONObject(0);
  
