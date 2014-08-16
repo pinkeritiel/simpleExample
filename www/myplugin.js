@@ -9,4 +9,4 @@ var myPlugin = {
         );
     }
 };
-module.exports = myPlugin;
+module.exports = myplugin;
