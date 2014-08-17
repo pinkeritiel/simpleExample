@@ -48,7 +48,7 @@ var app = {
         console.log('Received Event: ' + id);
     },
     callPlugin: function(){
-        alert('calling plugin');
+        alert('calling plugin v01');
         myPlugin.runPlugin();
     }
 
