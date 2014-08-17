@@ -49,7 +49,7 @@ var app = {
     },
     callPlugin: function(){
         alert('calling plugin');
-        myplugin.runPlugin();
+        myPlugin.runPlugin();
     }
 
 };
