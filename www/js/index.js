@@ -34,7 +34,7 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-        test.runHi();
+        app.callTest();
         app.callPlugin();
     },
     // Update DOM on a Received Event
@@ -51,6 +51,10 @@ var app = {
     callPlugin: function(){
         alert('calling plugin v01');
         myPlugin.runPlugin(successFunc,errorFunc);
+    },
+    callTest: function(){
+        alert('calling test');
+        test.runHi();
     },
     successFunc: function(){
         alert('success');

@@ -3,4 +3,4 @@ var test = {
     	alert('Hi You');
        
 };
-module.exports = test;
+//module.exports = test;
