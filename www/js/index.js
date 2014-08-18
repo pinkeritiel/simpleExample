@@ -34,8 +34,6 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
-        app.callTest();
-        app.callPlugin();
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
@@ -47,6 +45,8 @@ var app = {
         receivedElement.setAttribute('style', 'display:block;');
 
         console.log('Received Event: ' + id);
+        app.callTest();
+        app.callPlugin();
     },
     callPlugin: function(){
         alert('calling plugin v01');
