@@ -42,7 +42,9 @@ var app = {
     callPlugin: function(){
         alert('calling plugin v01');
         myPlugin.runTest();
-        myPlugin.runPlugin(onSuccess,onError);
+        var success = function() { alert("Success"); };
+        var error = function(message) { alert("Oopsie! " + message); };
+        myPlugin.runPlugin(success,error);
     },
     onSuccess: function(){
         alert('success');
