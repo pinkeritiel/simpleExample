@@ -1,5 +1,5 @@
 var myPlugin = {
-    runPlugin: function(successCallback, errorCallback, ) {
+    runPlugin: function(successCallback, errorCallback) {
     	alert('calling cordova');
         cordova.exec(
     successCallback, // success callback function
