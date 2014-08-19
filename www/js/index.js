@@ -36,7 +36,7 @@ var app = {
     onDeviceReady: function() {
        // app.receivedEvent('deviceready');
        alert('check device ready');
- 
+       app.callTest();
     },
     onSuccess: function(position){
         alert("success");
