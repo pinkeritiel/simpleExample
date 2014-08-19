@@ -19,6 +19,7 @@
 var app = {
     // Application Constructor
     initialize: function() {
+        alert('initializing...');
         this.bindEvents();
     },
     // Bind Event Listeners
@@ -32,17 +33,38 @@ var app = {
     //
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
-    
     onDeviceReady: function() {
-       // app.receivedEvent('deviceready');
-       alert('check device ready');
- 
+        alert('deviceready');
+        app.callTest();
+        app.callPlugin();
+//        app.receivedEvent('deviceready');
     },
-    onSuccess: function(position){
-        alert("success");
+    // Update DOM on a Received Event
+  /*
+    receivedEvent: function(id) {
+        alert('Event received ' + id);
+        var parentElement = document.getElementById(id);
+        var listeningElement = parentElement.querySelector('.listening');
+        var receivedElement = parentElement.querySelector('.received');
+
+        listeningElement.setAttribute('style', 'display:none;');
+        receivedElement.setAttribute('style', 'display:block;');
+
+        console.log('Received Event: ' + id);
+    }, */
+    callPlugin: function(){
+        alert('calling plugin v01');
+        myPlugin.runPlugin(successFunc,errorFunc);
     },
-    onError: function(error){
-        alert('code: ' + error.code + '\n' + 'message: ' +error.message + '\n');
+    callTest: function(){
+        alert('calling test');
+        test.runHi();
+    },
+    successFunc: function(){
+        alert('success');
+    },
+    errorFunc function(){
+        alert('error');
     }
-  
+
 };
