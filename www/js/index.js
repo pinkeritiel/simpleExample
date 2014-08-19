@@ -43,6 +43,10 @@ var app = {
     },
     onError: function(error){
         alert('code: ' + error.code + '\n' + 'message: ' +error.message + '\n');
+    },
+    callTest: function(){
+        alert('calling test');
+        test.runHi();
     }
   
 };
