@@ -41,10 +41,11 @@ var app = {
     },    
     callPlugin: function(){
         alert('calling plugin v01');
+        myPlugin.runTest();
         myPlugin.runPlugin(onSuccess,onError);
     },
     onSuccess: function(){
-        alert("success");
+        alert('success');
     },
     onError: function(){
         alert('error');
