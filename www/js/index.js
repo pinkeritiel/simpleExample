@@ -37,6 +37,11 @@ var app = {
        // app.receivedEvent('deviceready');
        alert('check device ready');
        app.callTest();
+       app.callPlugin();
+    },    
+    callPlugin: function(){
+        alert('calling plugin v01');
+        myPlugin.runPlugin(successFunc,errorFunc);
     },
     onSuccess: function(position){
         alert("success");
