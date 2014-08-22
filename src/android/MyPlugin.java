@@ -1,13 +1,13 @@
 package com.mindfire.plugin;
  
 import org.apache.cordova.CallbackContext;
-import org.apache.cordova.CallbackContext;
+import org.apache.cordova.CordovaPlugin;
 import org.json.JSONObject;
 import org.json.JSONArray;
 import org.json.JSONException;
 import android.app.Activity;
 import android.content.Intent;
-import android.telephony.TelephonyManager;
+//import android.telephony.TelephonyManager;
 
 public class MyPlugin extends CordovaPlugin {
      public static final String ACTION_DEMO = "sampleAction";
