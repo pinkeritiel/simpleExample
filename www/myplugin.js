@@ -1,7 +1,7 @@
 var myPlugin = {
-    runTest: function() {
-        alert('Test plug');
-    },   
+  //  runTest: function() {
+  //      alert('Test plug');
+  //  },   
     runPlugin: function(successCallback, errorCallback) {
     	alert('calling cordova');
         cordova.exec(
